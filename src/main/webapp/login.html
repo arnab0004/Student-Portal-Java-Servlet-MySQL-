@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Student Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-color);">
+	<!-- Header -->
+	<header>
+		<h1>Student Portal</h1>
+		<br>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="admission.html">Admission</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="login.html" class="active">Login / Register</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<h2>Welcome Back</h2>
+		<p>Access your student account to manage your courses,
+			assignments, and academic progress.</p>
+	</section>
+
+	<!-- Main Content -->
+	<main>
+		<section class="preview">
+			<h2>Student Login</h2>
+			<p>Enter your credentials to access your personalized student
+				dashboard.</p>
+
+			<form onsubmit="return validateLogin(event)" action="login"
+				method="post">
+				<label for="username">Username/Student ID:</label> <input
+					type="text" id="username" name="username" required
+					placeholder="Enter your username or student ID"> <label
+					for="password">Password:</label> <input type="password"
+					id="password" name="password" required
+					placeholder="Enter your password">
+
+				<div
+					style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-lg);">
+					<label style="display: flex; align-items: center; margin: 0;">
+						<input type="checkbox" id="remember" name="remember"
+						style="margin-right: var(--spacing-sm);"> <span
+						style="font-size: var(--font-size-sm);">Remember me</span>
+					</label> <a href="#"
+						style="font-size: var(--font-size-sm); color: var(--primary-color); text-decoration: none;">Forgot
+						password?</a>
+				</div>
+				<div>
+					<a href="register.html">Don't have an account?click here</a>
+				</div>
+
+				<button type="submit" class="btn" style="width: 100%;">Login
+					to Account</button>
+			</form>
+
+		</section>
+
+		<section class="preview">
+			<h2>Login Help</h2>
+			<div class="card-container">
+				<div class="card">
+					<h3>🔐 Forgot Password?</h3>
+					<p>If you've forgotten your password, click the "Forgot
+						password?" link above to reset it through email verification.</p>
+				</div>
+
+				<div class="card">
+					<h3>👤 New Student?</h3>
+					<p>New students need to complete the admission process first.
+						Your login credentials will be provided after admission
+						confirmation.</p>
+				</div>
+
+				<div class="card">
+					<h3>📞 Need Assistance?</h3>
+					<p>Contact our IT support team at (555) 123-TECH or email
+						support@studentportal.edu for login assistance.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="preview">
+			<h2>What You Can Access</h2>
+			<div class="card-container">
+				<div class="card">
+					<h3>📚 Course Materials</h3>
+					<p>Access lecture notes, assignments, and study resources for
+						all your enrolled courses.</p>
+				</div>
+
+				<div class="card">
+					<h3>📊 Grades & Progress</h3>
+					<p>View your academic performance, grades, and progress reports
+						in real-time.</p>
+				</div>
+
+				<div class="card">
+					<h3>🗓️ Schedule & Events</h3>
+					<p>Manage your class schedule and stay updated with campus
+						events and deadlines.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Student Portal</p>
+		<a style ="color: white" href="admin/admin_login.jsp">Are you an admin? login here</a>
+
+
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

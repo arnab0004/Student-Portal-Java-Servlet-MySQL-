@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-color);">
+  <header>
+    <h1>Student Portal</h1><br>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Create Your Account</h2>
+    <p>Join the Student Portal to access your personalized dashboard and academic tools.</p>
+  </section>
+
+  <main>
+    <section class="preview">
+      <h2>Student Registration</h2>
+      <form action="register" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn" style="width: 100%;">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Portal</p>
+  </footer>
+</body>
+</html>
